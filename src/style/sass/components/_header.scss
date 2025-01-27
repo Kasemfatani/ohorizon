@@ -1,0 +1,215 @@
+body {
+    overflow-x: hidden;
+}
+
+*{
+
+}
+::-moz-selection { /* Code for Firefox */
+    color: $main;
+    background: #d80000;
+  }
+  
+  ::selection {
+    color: $main;
+    background: $sec;
+  }
+
+header {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.15);
+
+    .container {
+        position: relative;
+    }
+
+    .logo-img {
+        height: 50px;
+        width: auto;
+    }
+
+    .lang-btn {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // border: 2px solid $sec;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .links {
+        min-width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 35px;
+
+        a {
+            color: #333;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        .active {
+            color: $main;
+        }
+
+        a:hover {
+            color: $main;
+        }
+
+        .book-link {
+            padding-left: 32px;
+            padding-right: 32px;
+            background-color: $sec;
+            color: $white;
+            border-radius: 30px;
+            height: 55px;
+            line-height: 55px;
+        }
+        
+        .book-link:hover {
+            background-color: $main;
+            color: $sec;
+        }
+    }
+
+    .menu-bars {
+        display: none;
+        cursor: pointer;
+
+        a {
+            width: 100%;
+        }
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .side-menu {
+        position: absolute;
+        top: 100%;
+        inset-inline-end: 15px;
+        flex-direction: column;
+        padding: 10px;
+        border-radius: 8px;
+        background-color: $white;
+        box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.15);
+        z-index: 10;
+        min-width: 300px;
+        align-items: center;
+        display: flex;
+        opacity: 0;
+        visibility: hidden;
+
+        .links {
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            align-items: center;
+
+            a {
+                width: 100%;
+                text-align: center;
+                border-radius: 8px;
+            }
+
+            a:hover {
+                background-color: $main;
+                color: $white;
+            }
+
+            .book-link:hover {
+                background-color: $main;
+            }
+
+        }
+    }
+
+    .side-menu-active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@media (max-width: 676px) {
+    header {
+        .links {
+            display: none;
+        }
+
+        .side-menu {
+            .links {
+                display: flex;
+            }
+        }
+
+        .menu-bars {
+            display: block;
+        }
+
+        .hidden {
+            display: none;
+        }
+    }
+}
+.footer-main{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .footer-cont {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid $sec;
+        padding-top: 32px;
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        i {
+            font-size: 18px;
+            color: rgba(34, 50, 110, 0.6);
+            &:hover {
+                color: $sec;
+                transform: scale(1.4);
+            }
+        }
+
+        
+        .social {
+            display: flex;
+            align-items: center;
+            gap: 27px;
+        }
+    }
+}
+.copyRight {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    img {
+        width: 13px;
+        height: 13px;
+    }
+
+    p {
+        color: rgba(34, 50, 110, 0.6);
+        font-size: 16px;
+        font-weight: 500;
+        @media screen and (max-width: 767px) {
+            font-size: 14px;
+        }
+    }
+}

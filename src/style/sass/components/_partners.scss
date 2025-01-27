@@ -1,0 +1,81 @@
+.semi-about {
+    .genGeb .genSection {
+        padding-top: 0;
+        padding-bottom: 40px;
+        justify-content: space-between;
+
+        .l-side {
+            gap: 0;
+
+            h2 {
+                font-size: 32px;
+                font-weight: 700;
+                margin-bottom: 0;
+            }
+
+            h3 {
+                font-size: 24px;
+                font-weight: 600;
+                margin-bottom: 16px;
+            }
+
+            p {
+                font-size: 20px;
+                font-weight: 400;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .img-cont-semi {
+        width: 100%;
+        max-width: 376px;
+    }
+}
+
+.parteners {
+    padding: 32px 0;
+    background-color: $sec;
+    h2{
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        color: #141414;
+        @media screen and (max-width: 767px) {  
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+    }
+    .gap-custom {
+        gap: 95px;
+        margin-left: 40px;
+    }
+}
+
+.parts-cont {
+    height: 40px;
+
+    .partss {
+        width: 100%;
+        height: 100%;
+        .relative{
+            height: 100%;
+        }
+    }
+
+    .part-cont {
+        height: 108px;
+        gap: 200px;
+    }
+
+    img {
+        height: 40%;
+        width: auto;
+        object-fit: contain;
+    }
+
+    img:hover {
+        transform: scale(1.2);
+    }
+
+}

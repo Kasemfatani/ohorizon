@@ -1,4 +1,4 @@
-const API_BASE_URL = 'https://ohorizon.sa/api';
+const API_BASE_URL = 'https://app.ohorizon.sa/api';
 
 const API_ENDPOINTS = {
   REGISTER: '/auth/register',

@@ -70,7 +70,7 @@ export default function Parteners() {
                                                             img.type === 'image' ?
                                                                 <Image src={img.image} alt="Mazar" width={200} height={200} className="mb-4 size-full rounded-lg object-contain" />
                                                                 :
-                                                                <video controls>
+                                                                <video className='mb-4 size-full rounded-lg object-contain'>
                                                                     <source src={img.image} type="video/mp4" />
                                                                     Your browser does not support the video tag.
                                                                 </video>

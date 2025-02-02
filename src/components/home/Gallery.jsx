@@ -66,7 +66,16 @@ export default function Parteners() {
                                             <BlurFade key={idx} delay={0.25 + idx * 0.05} inView>
                                                 <a href={img.image} data-fancybox="gallery">
                                                     <figure>
-                                                        <Image src={img.image} alt="Mazar" width={200} height={200} className="mb-4 w-full max-h-96   rounded-lg object-cover aspect-auto" />
+                                                        {
+                                                            img.type === 'image' ?
+                                                                <Image src={img.image} alt="Mazar" width={200} height={200} className="mb-4 size-full rounded-lg object-contain" />
+                                                                :
+                                                                <video controls>
+                                                                    <source src={img.image} type="video/mp4" />
+                                                                    Your browser does not support the video tag.
+                                                                </video>
+                                                        }
+                                                        
                                                     </figure>
                                                 </a>
                                             </BlurFade>

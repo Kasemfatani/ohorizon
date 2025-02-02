@@ -59,7 +59,7 @@ export default function Customize() {
             <div className="overlay"></div>
             <div className="container m-auto relative z-10">
                 <h2>{lang=='en'?"You can customize your trip now ":"يمكنك تخصيص رحلتك الان"}</h2>
-                <h4>{lang == 'en' ? "We will get in touch with you" : "سنتصل بيك على الفور"}</h4>
+                <h4>{lang == 'en' ? "We will get in touch with you" : "سنتصل بك على الفور"}</h4>
                 <div className="btns">
                     <Link  href={`https://wa.me/${whatsapp}?text=Hello, Can you assist me?!`} className='book-link '>
                         <span>{lang === 'en' ? 'Contact us' : 'اتصل بنا'}</span>

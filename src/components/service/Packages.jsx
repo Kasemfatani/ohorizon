@@ -71,7 +71,7 @@ export default function Packages({ data, lang, contact, whatsapp }) {
                                         }
                                     </div>
                                     <div className="btns">
-                                        <Link href={`https://wa.me/${whatsapp}?text=Hello, I need package *${item.title}*. Can you assist me?!`} className="book-link">{lang === 'en' ? 'Find out More' : 'احصل على المزيد'}</Link>
+                                        <Link href={`https://wa.me/${whatsapp}?text=Hello, I need package *${item.title}*. Can you assist me?!`} className="book-link">{lang === 'en' ? 'Book This Package' : 'احجز هذه الباقة'}</Link>
                                     </div>
                                 </div>
                             </SwiperSlide>

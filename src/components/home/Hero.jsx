@@ -110,7 +110,7 @@ export default function Hero() {
                                             }
                                             <p>{item.sub_title}</p>
                                             <div className="btns">
-                                                <Link href="/explore" className='book-link' >{lang === 'en' ? 'book a trip ' : 'حجز رحلة'}</Link>
+                                                <Link href="/explore" className='book-link' >{lang === 'en' ? 'Find out more ' : 'تعرف على المزيد'}</Link>
                                                 <Link href="/explore" className='book-link sec-book-link' >{lang === 'en' ? 'Customize a package ' : 'تخصيص رحلة'}</Link>
                                             </div>
                                         </div>

@@ -1046,6 +1046,9 @@ footer .footer-cont .social {
   text-align: center;
   margin-bottom: 32px;
 }
+.explore-cont .swiper-slide {
+  height: auto;
+}
 .explore-cont .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1081,6 +1084,7 @@ footer .footer-cont .social {
   padding: 24px;
   background-color: #EFF2FF;
   border-radius: 32px;
+  height: 100%;
 }
 @media screen and (max-width: 767px) {
   .exp-card {
@@ -1093,6 +1097,7 @@ footer .footer-cont .social {
   overflow: hidden;
   width: 100%;
   aspect-ratio: 238/161;
+  flex-shrink: 0;
 }
 .exp-card .img-cont img {
   width: 100%;
@@ -1104,6 +1109,7 @@ footer .footer-cont .social {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  height: 100%;
 }
 .exp-card .text h3 {
   font-size: 24px;
@@ -1119,6 +1125,7 @@ footer .footer-cont .social {
   font-size: 16px;
   font-weight: 400;
   color: #555555;
+  height: 100%;
 }
 @media screen and (max-width: 767) {
   .exp-card .text p {
@@ -1271,6 +1278,7 @@ html {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 8px;
+  flex-wrap: wrap;
 }
 .packages .packages-cont .packages-card .title-most span {
   height: 32px;

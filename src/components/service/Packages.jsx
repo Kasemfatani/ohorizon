@@ -62,7 +62,7 @@ export default function Packages({ data, lang, contact, whatsapp }) {
                                         <h4>{item.title}</h4>
                                         {item.is_popular ? <span>{lang === 'en' ? 'Most Popular' : 'الأكثر مبيعا'}</span> : null}
                                     </div>
-                                    <h2>{item.price} {lang === 'en' ? 'SAR' : 'ر.س'}</h2>
+                                    <h2>{item.price} $</h2>
                                     <div className="feats h-full">
                                         {
                                             item.features.map((feature, index) =>
